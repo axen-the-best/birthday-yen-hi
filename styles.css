@@ -1,0 +1,274 @@
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Montserrat:wght@400;500;600&display=swap');
+
+/* ===== COLOURS ===== */
+:root {
+    --parchment: #f0e4c8;
+    --dark-parchment: #dfcda8;
+    --burgundy: #581c2b;
+    --deep-burgundy: #35101a;
+    --gold: #a77b32;
+    --ink: #34271f;
+}
+
+/* ===== GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(ellipse at top, #fff4d9 0%, transparent 65%),
+        var(--parchment);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 8%;
+    background: rgba(53, 16, 26, 0.96);
+    color: var(--parchment);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--gold);
+}
+
+.navbar a {
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e6bd70;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 90vh;
+    padding: 120px 10% 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--gold);
+    position: relative;
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero h1,
+.ending h2 {
+    color: var(--burgundy);
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(75px, 13vw, 145px);
+    font-weight: 400;
+    line-height: 0.85;
+    margin-bottom: 35px;
+}
+
+.hero h1 span,
+.ending h2 span {
+    color: var(--gold);
+}
+
+.subtitle {
+    max-width: 500px;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
+.scroll-link {
+    color: var(--burgundy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+.scroll-link:hover {
+    color: var(--gold);
+}
+
+.section-number {
+    position: absolute;
+    bottom: 30px;
+    right: 8%;
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.section {
+    max-width: 850px;
+    margin: auto;
+    padding: 120px 10%;
+    border-bottom: 1px solid rgba(167, 123, 50, 0.4);
+}
+
+.section h2 {
+    color: var(--burgundy);
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(38px, 6vw, 65px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 30px;
+}
+
+.body-text {
+    font-size: 22px;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+/* ===== DATE CARD ===== */
+.date-card {
+    margin-top: 45px;
+    padding: 28px;
+    text-align: center;
+    border: 1px solid var(--gold);
+    background: rgba(255, 248, 225, 0.45);
+    color: var(--burgundy);
+    font-style: italic;
+}
+
+/* ===== PLAYLIST CARD ===== */
+.music-card {
+    margin-top: 40px;
+    padding: 40px;
+    background: var(--burgundy);
+    color: var(--parchment);
+    border: 2px solid var(--gold);
+    outline: 1px solid var(--burgundy);
+    outline-offset: 6px;
+}
+
+.music-card h3 {
+    font-family: 'IM Fell English', serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 20px;
+    background: var(--parchment);
+    color: var(--burgundy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: var(--gold);
+    color: white;
+}
+
+/* ===== ENDING ===== */
+.ending {
+    min-height: 80vh;
+    padding: 120px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--deep-burgundy);
+    color: var(--parchment);
+}
+
+.ending .eyebrow {
+    color: #d8b66e;
+}
+
+.ending h2 {
+    color: var(--parchment);
+}
+
+.ending p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.ending .scroll-link {
+    color: var(--parchment);
+}
+
+.footer-note {
+    margin-top: 90px;
+    color: #d8b66e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .hero {
+        padding: 100px 7%;
+    }
+
+    .section {
+        padding: 85px 8%;
+    }
+
+    .music-card {
+        padding: 25px;
+    }
+
+    .navbar {
+        padding: 16px 7%;
+    }
+}
+
+/* ===== SCROLL REVEAL ===== */
+.section,
+.ending {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible,
+.ending.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
